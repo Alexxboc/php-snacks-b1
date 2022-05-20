@@ -50,5 +50,4 @@ for ($i=0; $i < count($matches) ; $i++) {
     //  var_dump($finalScore);
     echo $finalScore;
 }
-
- ?>
+?>
