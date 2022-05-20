@@ -14,28 +14,28 @@ Olimpia Milano - Cantù | 55-60
      [
          "homeTeam" => "Juventus",
          "visitingTeam" => "Inter",
-         "homeScorse" => 10,
+         "homeScore" => 10,
          "visitingScore" => 0
 
      ],
      [
         "homeTeam" => "Milan",
         "visitingTeam" => "Sassuolo",
-        "homeScorse" => 1,
+        "homeScore" => 1,
         "visitingScore" => 3
 
     ],
     [
         "homeTeam" => "Parma",
         "visitingTeam" => "Genoa",
-        "homeScorse" => 1,
+        "homeScore" => 1,
         "visitingScore" => 1
 
     ],
     [
         "homeTeam" => "Roma",
         "visitingTeam" => "Lazio",
-        "homeScorse" => 2,
+        "homeScore" => 2,
         "visitingScore" => 3
 
     ],
@@ -44,10 +44,11 @@ Olimpia Milano - Cantù | 55-60
 // var_dump($matches);
 
 for ($i=0; $i < count($matches) ; $i++) { 
-     $match = $matches[i];
-     var_dump($match);
-     $finalScore = $match['homeTeam'] . '-' . $match['visitingTeam'] . '|' . $match['homeScore'].'-'.$match['visitingScore'];
-     var_dump($finalScore);
+     $match = $matches[$i];
+    //  var_dump($match);
+     $finalScore = $match['homeTeam']  .  ' - ' . $match['visitingTeam']  .  ' | ' . $match['homeScore']  .  ' - '  .  $match['visitingScore'];
+    //  var_dump($finalScore);
+    echo $finalScore;
 }
 
  ?>
