@@ -14,6 +14,8 @@ $newSpeech = explode('.', $speech);
     <title>Document</title>
 </head>
 <body>
+
+    <h1>Trainspotting Speech</h1>
     <?php foreach ($newSpeech as $paragraph) : ?>
         <p><?= $paragraph ?></p>
     <?php endforeach ?>
