@@ -22,7 +22,7 @@ $newSpeech = explode('.', $speech);
 
     <h1>Trainspotting Speech</h1>
     <?php foreach ($newSpeech as $paragraph) : ?>
-        <p><?= $paragraph ?></p>
+        <p><?= $paragraph ?>.</p>
     <?php endforeach ?>
 </body>
 </html>
